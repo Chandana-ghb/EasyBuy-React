@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
 const FavoritesContext = createContext();
-const BASE_URL = import.meta.env.VITE_API_URL;
+const BASE_URL = "https://easybuy-react.onrender.com";
 
 export const FavoritesProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
