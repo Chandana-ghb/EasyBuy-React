@@ -19,7 +19,7 @@ function Register() {
     try {
       // check user exists
       const res = await fetch(
-        `http://localhost:5000/users?email=${data.email}`
+        `https://easybuy-react.onrender.com/users?email=${data.email}`
       );
       const existingUser = await res.json();
 
@@ -29,7 +29,7 @@ function Register() {
       }
 
       // register user
-      await fetch("http://localhost:5000/users", {
+      await fetch("https://easybuy-react.onrender.com/users", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
