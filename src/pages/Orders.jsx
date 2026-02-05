@@ -6,7 +6,7 @@ function Orders() {
   const user = JSON.parse(localStorage.getItem("user_details"));
 
   useEffect(() => {
-    fetch(`http://localhost:5000/orders?userId=${user.id}`)
+    fetch(`https://easybuy-react.onrender.com/orders?userId=${user.id}`)
       .then((res) => res.json())
       .then((data) => setOrders(data));
   }, [user.id]);
