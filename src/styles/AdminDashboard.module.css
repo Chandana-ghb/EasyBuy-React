@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.adminContainer {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 15px;
+  background: linear-gradient(135deg, #eef2ff, #f0fdfa);
+  border-radius: 16px;
+  /* ✅ ADD THESE */
+  min-height: calc(85vh - 140px);
+  display: flex;
+  flex-direction: column;
+}
+
+.adminSection {
+  margin-bottom: 35px;
+}
+
+.adminContainer h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.adminSection h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 6px;
+}
+
+/* Forms */
+.formRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.formRow input {
+  flex: 1;
+  min-width: 150px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+.addBtn {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Product Cards */
+.productCard, .offerCard, .orderCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(8px);
+}
+
+.productActions, .orderButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.editBtn { background: #fbbf24; color: #fff; border: none; padding: 6px 12px; border-radius: 10px; cursor: pointer; }
+.saveBtn { background: #22c55e; color: #fff; border: none; padding: 6px 12px; border-radius: 10px; }
+.cancelBtn { background: #ef4444; color: #fff; border: none; padding: 6px 12px; border-radius: 10px; }
+.deleteBtn { background: #ef4444; color: #fff; border: none; padding: 6px 12px; border-radius: 10px; }
+
+.orderButtons button:nth-child(1) { background: #facc15; }
+.orderButtons button:nth-child(2) { background: #22c55e; }
+.orderButtons button:nth-child(3) { background: #ef4444; }
+
+/* Responsive */
+@media(max-width:768px){
+  .formRow{ flex-direction: column; }
+  .productCard, .offerCard, .orderCard{ flex-direction: column; text-align:center; }
+  .orderButtons{ justify-content:center; }
+}
+
+/* Order Buttons Container */
+.orderButtons {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Common Button Style */
+.orderButtons button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Status Colors with Gradient */
+.orderButtons button:nth-child(1) { 
+  background: linear-gradient(135deg, #fcd34d, #fbbf24); /* Shipping */
+}
+
+.orderButtons button:nth-child(2) { 
+  background: linear-gradient(135deg, #4ade80, #22c55e); /* Delivered */
+}
+
+.orderButtons button:nth-child(3) { 
+  background: linear-gradient(135deg, #f87171, #ef4444); /* Cancel */
+}
+
+/* Hover Effects */
+.orderButtons button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  opacity: 0.95;
+}
+
+/* Focus Effect for Accessibility */
+.orderButtons button:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+
+/* ================= ADD / EDIT BUTTONS ================= */
+.formRow button {
+  background: linear-gradient(135deg, #1562dd, #06b6d4);
+  color: #fff;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.formRow button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(80, 137, 228, 0.3);
+}
+
+/* Cancel button style */
+.formRow button:nth-child(n+3) {
+  background: #3ae35c; 
+  margin-left: 10px;
+}
+
+.formRow button:nth-child(n+3):hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(144, 225, 135, 0.3);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.tabs button {
+  padding: 10px 22px;
+  border-radius: 14px;
+  border: none;
+  background: #8faeed;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tabs button:hover {
+  background: #778bdc;
+}
+
+.activeTab {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+  color: #fff;
+}
+
+.scrollList {
+  max-height: 420px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+/* Smooth scrollbar */
+.scrollList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollList::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 10px;
+}

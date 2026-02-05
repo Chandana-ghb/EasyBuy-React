@@ -1,0 +1,633 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Admin",
+      "email": "admin@easybuy.com",
+      "pass": "Admin@123",
+      "role": "admin"
+    },
+    {
+      "id": "35c6",
+      "name": "Chandana Komaravolu",
+      "email": "chandu@gmail.com",
+      "pass": "Chandu@123",
+      "role": "user"
+    },
+    {
+      "id": "57f6",
+      "name": "Bala",
+      "email": "bala@gmail.com",
+      "pass": "Bala@123",
+      "role": "user"
+    },
+    {
+      "id": "ff25",
+      "name": "Amma",
+      "email": "amma@gmail.com",
+      "pass": "Amma@123",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "e256",
+      "title": "iPhone 14",
+      "price": 79999,
+      "image": "https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg",
+      "category": "electronics",
+      "description": "Apple iPhone 14 with A15 Bionic chip and advanced dual-camera system."
+    },
+    {
+      "id": "8ca8",
+      "title": "Boat Rockerz 450 Headphones",
+      "price": 1499,
+      "image": "https://m.media-amazon.com/images/I/61u1VALn6JL._SX679_.jpg",
+      "category": "electronics",
+      "description": "Wireless Bluetooth headphones with powerful bass and long battery life."
+    },
+    {
+      "id": "1e4b",
+      "title": "Refrigerator",
+      "price": 30000,
+      "image": "https://media3.bsh-group.com/Images/400x/MCMI02371670_Siemens_Global_Stages_01_4_4.jpg",
+      "category": "electronics",
+      "description": "A modern, energy-efficient refrigerator that keeps your food fresh, organized, and perfectly cooled every day."
+    },
+    {
+      "id": "e102",
+      "title": "Laptop",
+      "price": 55000,
+      "image": "https://m.media-amazon.com/images/I/71TPda7cwUL._SX679_.jpg",
+      "category": "electronics",
+      "description": "Lightweight laptop ideal for work, study, and entertainment with fast performance."
+    },
+    {
+      "id": "e103",
+      "title": "Smart Watch",
+      "price": 2999,
+      "image": "https://m.media-amazon.com/images/I/61IMRs+o0iL._SX679_.jpg",
+      "category": "electronics",
+      "description": "Feature-rich smartwatch with fitness tracking and notification support."
+    },
+    {
+      "id": "e104",
+      "title": "Bluetooth Headphones",
+      "price": 1999,
+      "image": "https://m.media-amazon.com/images/I/61CGHv6kmWL._SX679_.jpg",
+      "category": "electronics",
+      "description": "Wireless headphones delivering immersive sound and all-day comfort."
+    },
+    {
+      "id": "e105",
+      "title": "LED TV",
+      "price": 28000,
+      "image": "https://miro.medium.com/v2/resize:fit:1000/1*OWl4dBRpi0ZCPJUA7fjLlg.jpeg",
+      "category": "electronics",
+      "description": "Full HD smart LED TV with vibrant visuals and built-in streaming apps."
+    },
+    {
+      "id": "e106",
+      "title": "Power Bank",
+      "price": 1499,
+      "image": "https://m.media-amazon.com/images/I/61l9ppRIiqL._SX679_.jpg",
+      "category": "electronics",
+      "description": "High-capacity power bank for fast and reliable charging on the go."
+    },
+    {
+      "id": "e107",
+      "title": "Wireless Mouse",
+      "price": 699,
+      "image": "https://m.media-amazon.com/images/I/61mpMH5TzkL._SX679_.jpg",
+      "category": "electronics",
+      "description": "Ergonomic wireless mouse with smooth tracking and long battery life."
+    },
+    {
+      "id": "e108",
+      "title": "Keyboard",
+      "price": 899,
+      "image": "https://tse2.mm.bing.net/th/id/OIP.M90tdjXardZX_vGARJWrSAHaED?pid=Api&P=0&h=180",
+      "category": "electronics",
+      "description": "Comfortable keyboard designed for fast and accurate typing."
+    },
+    {
+      "id": "e109",
+      "title": "Tablet",
+      "price": 22000,
+      "image": "https://m.media-amazon.com/images/I/61aUBxqc5PL._SX679_.jpg",
+      "category": "electronics",
+      "description": "Portable tablet perfect for entertainment, learning, and productivity."
+    },
+    {
+      "id": "e110",
+      "title": "Air Conditioner",
+      "price": 35000,
+      "image": "https://tse2.mm.bing.net/th/id/OIP.jkFrLvvc-UtM-Tz-FbW0YAHaEO?pid=Api&P=0&h=180",
+      "category": "electronics",
+      "description": "Energy-efficient air conditioner for fast cooling and comfort."
+    },
+    {
+      "id": "c4f7",
+      "title": "Men Cotton T-Shirt",
+      "price": 599,
+      "image": "https://tse1.mm.bing.net/th/id/OIP.bR4faWigdqVYC09_Y7ElyQHaHa?pid=Api&P=0&h=180",
+      "category": "fashion",
+      "description": "Comfortable cotton T-shirt for daily wear."
+    },
+    {
+      "id": "aa9b",
+      "title": "Women Kurti",
+      "price": 1299,
+      "image": "https://www.beautyepic.com/wp-content/uploads/2017/07/25-Slit-Kurti.jpg",
+      "category": "fashion",
+      "description": "Stylish ethnic kurti perfect for casual and festive occasions."
+    },
+    {
+      "id": "f101",
+      "title": "Men Casual Shirt",
+      "price": 1299,
+      "image": "https://i5.walmartimages.com/seo/Dubinik-Denim-Shirt-Men-Mens-Denim-Shirts-Long-Sleeve-Mens-Denim-Button-Down-Shirt-Cotton-Regular-Fit-Casual-Work-Shirts_a7022c71-cece-43e7-b4b3-b9af10fd384f.55754711f98e2a97726f19012c74bff8.jpeg",
+      "category": "fashion",
+      "description": "Stylish casual shirt perfect for daily wear and outings."
+    },
+    {
+      "id": "f103",
+      "title": "Women Jeans",
+      "price": 1999,
+      "image": "https://www.warehouseone.com/on/demandware.static/-/Sites-warehouseone-master/default/dwb3477a0c/who/1210600376~090~1.jpg?sw=690&sh=920&sm=fit&q=88",
+      "category": "fashion",
+      "description": "Durable denim jeans with modern fit and premium fabric."
+    },
+    {
+      "id": "f104",
+      "title": "Women Saree",
+      "price": 2999,
+      "image": "https://i.etsystatic.com/22355922/r/il/f0b20d/3733620488/il_1080xN.3733620488_tkqq.jpg",
+      "category": "fashion",
+      "description": "Beautiful saree with rich design for festive occasions."
+    },
+    {
+      "id": "f105",
+      "title": "Women Sharara",
+      "price": 2999,
+      "image": "https://tse4.mm.bing.net/th/id/OIP.2N3_097LiF2Isy5cyDZkyAHaJR?pid=Api&P=0&h=180",
+      "category": "fashion",
+      "description": "Comfortable cotton t-shirt suitable for everyday wear."
+    },
+    {
+      "id": "f106",
+      "title": "Jacket",
+      "price": 3499,
+      "image": "https://tse3.mm.bing.net/th/id/OIP.eK9Nav3Bf6F4jN1zXVgWdAHaI-?pid=Api&P=0&h=180",
+      "category": "fashion",
+      "description": "Warm and stylish jacket ideal for winter seasons."
+    },
+    {
+      "id": "f107",
+      "title": "Shoes",
+      "price": 2499,
+      "image": "https://m.media-amazon.com/images/I/61utX8kBDlL._SX679_.jpg",
+      "category": "fashion",
+      "description": "Trendy shoes offering comfort and durability."
+    },
+    {
+      "id": "f108",
+      "title": "Handbag",
+      "price": 1799,
+      "image": "https://tse4.mm.bing.net/th/id/OIP.eC3tcJfna5yxsDB8t1dFGQHaHa?pid=Api&P=0&h=180",
+      "category": "fashion",
+      "description": "Stylish handbag with spacious compartments."
+    },
+    {
+      "id": "f109",
+      "title": "Cap",
+      "price": 299,
+      "image": "https://store.geminichokes.com/467-thickbox_default_2x/cap.jpg",
+      "category": "fashion",
+      "description": "Casual cap for daily wear and outdoor activities."
+    },
+    {
+      "id": "f110",
+      "title": "Sunglasses",
+      "price": 999,
+      "image": "https://tse2.mm.bing.net/th/id/OIP.cMwuzRI1deO3dtpaauyntgHaGQ?pid=Api&P=0&h=180",
+      "category": "fashion",
+      "description": "UV-protected sunglasses with modern design."
+    },
+    {
+      "id": "468c",
+      "title": "Prestige Electric Kettle",
+      "price": 899,
+      "image": "https://d2xamzlzrdbdbn.cloudfront.net/products/b013434e-8924-414d-9649-991b5f85aa50.png",
+      "category": "home",
+      "description": "1.5-liter electric kettle for quick boiling."
+    },
+    {
+      "id": "d5c2",
+      "title": "Philips Mixer Grinder",
+      "price": 3299,
+      "image": "https://ii1.pepperfry.com/media/catalog/product/p/h/1100x1210/philips-viva-collection-hl7701-00-750-watt-mixer-grinder-with-4-jars-philips-viva-collection-hl7701--uxovm8.jpg",
+      "category": "home",
+      "description": "Powerful mixer grinder with multiple jars."
+    },
+    {
+      "id": "h101",
+      "title": "Sofa Set",
+      "price": 32000,
+      "image": "https://tse2.mm.bing.net/th/id/OIP.b0LKP3uORLyy74orS5UfNwHaE5?pid=Api&P=0&h=180",
+      "category": "home",
+      "description": "Comfortable and stylish sofa set for your living room."
+    },
+    {
+      "id": "h102",
+      "title": "Dining Table",
+      "price": 25000,
+      "image": "https://m.media-amazon.com/images/I/81cRjUEs8ML.jpg",
+      "category": "home",
+      "description": "Elegant dining table perfect for family meals."
+    },
+    {
+      "id": "h103",
+      "title": "Bed",
+      "price": 28000,
+      "image": "https://i.pinimg.com/originals/d7/aa/db/d7aadbc166d6f59d9bc95c6551eb197b.jpg",
+      "category": "home",
+      "description": "Comfortable bed with strong wooden frame."
+    },
+    {
+      "id": "h104",
+      "title": "Wall Clock",
+      "price": 1299,
+      "image": "https://m.media-amazon.com/images/I/61snq2UtPcL._AC_SL1500_.jpg",
+      "category": "home",
+      "description": "Modern wall clock to enhance home decor."
+    },
+    {
+      "id": "h105",
+      "title": "Curtains",
+      "price": 1599,
+      "image": "https://assets.wfcdn.com/im/28869079/compr-r85/2134/213449408/athena-velvet-room-darkening-pair.jpg",
+      "category": "home",
+      "description": "Premium curtains that add elegance and privacy."
+    },
+    {
+      "id": "h106",
+      "title": "Carpet",
+      "price": 3999,
+      "image": "https://tse1.mm.bing.net/th/id/OIP.vGj-P4TVz4lKEPSBfTGAzQHaEJ?pid=Api&P=0&h=180",
+      "category": "home",
+      "description": "Soft and durable carpet for home interiors."
+    },
+    {
+      "id": "h107",
+      "title": "Lamp",
+      "price": 1799,
+      "image": "https://m.media-amazon.com/images/I/71Lyfgnl1rL._AC_SL1500_.jpg",
+      "category": "home",
+      "description": "Decorative lamp for warm ambient lighting."
+    },
+    {
+      "id": "h108",
+      "title": "Bookshelf",
+      "price": 5499,
+      "image": "https://tse1.mm.bing.net/th/id/OIP.YmdIutYB7PouoPTHGXCqMgHaHa?pid=Api&P=0&h=180",
+      "category": "home",
+      "description": "Spacious bookshelf to organize books neatly."
+    },
+    {
+      "id": "h109",
+      "title": "Cookware Set",
+      "price": 2999,
+      "image": "https://tse3.mm.bing.net/th/id/OIP.fnLCUMmU3Gj4LDvbWapasAHaHa?pid=Api&P=0&h=180",
+      "category": "home",
+      "description": "Non-stick cookware set for everyday cooking."
+    },
+    {
+      "id": "h110",
+      "title": "Flower Vase",
+      "price": 999,
+      "image": "https://m.media-amazon.com/images/I/61UeG8BT1mL._AC_SL1500_.jpg",
+      "category": "home",
+      "description": "Elegant vase to beautify your home decor."
+    },
+    {
+      "id": "bc02",
+      "title": "Atomic Habits",
+      "price": 499,
+      "image": "https://m.media-amazon.com/images/I/81F90H7hnML._SY466_.jpg",
+      "category": "books",
+      "description": "Best-selling book by James Clear on building good habits."
+    },
+    {
+      "id": "6a30",
+      "title": "Rich Dad Poor Dad",
+      "price": 399,
+      "image": "https://m.media-amazon.com/images/I/81bsw6fnUiL._SY466_.jpg",
+      "category": "books",
+      "description": "Personal finance book by Robert Kiyosaki."
+    },
+    {
+      "id": "b203",
+      "title": "The Alchemist",
+      "price": 299,
+      "image": "https://m.media-amazon.com/images/I/71aFt4+OTOL._SX679_.jpg",
+      "category": "books",
+      "description": "An inspiring story about following your dreams."
+    },
+    {
+      "id": "b204",
+      "title": "Think Like a Monk",
+      "price": 450,
+      "image": "https://i0.wp.com/wordzz.com/wp-content/uploads/2023/07/Think_Like_A_Monk.jpeg?resize=1068%2C976&ssl=1",
+      "category": "books",
+      "description": "Guide to finding peace and purpose in daily life."
+    },
+    {
+      "id": "b205",
+      "title": "Java Programming",
+      "price": 699,
+      "image": "https://bag.webg.club/c788b610da8d4dc3888d20ab0595ea01.jpg",
+      "category": "books",
+      "description": "Comprehensive guide to learning Java programming."
+    },
+    {
+      "id": "b206",
+      "title": "Clean Code",
+      "price": 799,
+      "image": "https://m.media-amazon.com/images/I/41SH-SvWPxL._SX679_.jpg",
+      "category": "books",
+      "description": "Best practices for writing clean and maintainable code."
+    },
+    {
+      "id": "b207",
+      "title": "Ikigai",
+      "price": 349,
+      "image": "https://m.media-amazon.com/images/I/81l3rZK4lnL._SX679_.jpg",
+      "category": "books",
+      "description": "Discover the Japanese secret to long and happy life."
+    },
+    {
+      "id": "b208",
+      "title": "You Can Win",
+      "price": 299,
+      "image": "https://tse4.mm.bing.net/th/id/OIP.g0fqVzIoaFXSN7SIeRjjYwHaLb?pid=Api&P=0&h=180",
+      "category": "books",
+      "description": "Motivational book to boost confidence and success."
+    },
+    {
+      "id": "b209",
+      "title": "Deep Work",
+      "price": 499,
+      "image": "https://tse1.mm.bing.net/th/id/OIP.6__TFBldhlf_3rPOBEO0zQHaHa?pid=Api&P=0&h=180",
+      "category": "books",
+      "description": "Rules for focused success in a distracted world."
+    },
+    {
+      "id": "b210",
+      "title": "Psychology of Money",
+      "price": 399,
+      "image": "https://m.media-amazon.com/images/I/71g2ednj0JL._SX679_.jpg",
+      "category": "books",
+      "description": "Timeless lessons on wealth, greed, and happiness."
+    },
+    {
+      "id": "1731",
+      "title": "Mamaearth Face Wash",
+      "price": 299,
+      "image": "https://tse4.mm.bing.net/th/id/OIP.fmS5Qtx6zq-Cljt33IZd2wHaHa?pid=Api&P=0&h=180",
+      "category": "beauty",
+      "description": "Gentle face wash with natural ingredients."
+    },
+    {
+      "id": "b102",
+      "title": "Lakme 9to5 Foundation",
+      "price": 475,
+      "image": "https://tse2.mm.bing.net/th/id/OIP.M0ujmpVOa5Nw47U1Y8HF7QHaIV?pid=Api&P=0&h=180",
+      "category": "beauty",
+      "description": "Lightweight liquid foundation that gives smooth, long-lasting coverage for a flawless look."
+    },
+    {
+      "id": "b103",
+      "title": "Maybelline Mascara",
+      "price": 349,
+      "image": "https://tse3.mm.bing.net/th/id/OIP.GLmGRz1S35B4CNlDSATyhwHaHa?pid=Api&P=0&h=180",
+      "category": "beauty",
+      "description": "Volumizing mascara that enhances lashes and gives dramatic eye definition."
+    },
+    {
+      "id": "b104",
+      "title": "Nivea Body Lotion",
+      "price": 399,
+      "image": "https://tse3.mm.bing.net/th/id/OIP.9p9hYKNPmbBdoIegXgFGdQHaHa?pid=Api&P=0&h=180",
+      "category": "beauty",
+      "description": "Deep moisturizing body lotion that keeps your skin soft, smooth, and hydrated all day."
+    },
+    {
+      "id": "b105",
+      "title": "WOW Onion Shampoo",
+      "price": 499,
+      "image": "https://media6.ppl-media.com/mediafiles/ecomm/promo/1600024605_videoplace.jpg",
+      "category": "beauty",
+      "description": "Sulphate-free shampoo that strengthens hair, reduces hair fall, and promotes growth."
+    },
+    {
+      "id": "b106",
+      "title": "Plum Green Tea Toner",
+      "price": 390,
+      "image": "https://glowkartindia.in/wp-content/uploads/2020/09/WhatsApp-Image-2020-09-23-at-1.40.26-PM-3.jpeg",
+      "category": "beauty",
+      "description": "Alcohol-free toner that tightens pores, balances oil, and refreshes the skin."
+    },
+    {
+      "id": "b107",
+      "title": "Minimalist Sunscreen SPF 50",
+      "price": 349,
+      "image": "https://images-static.nykaa.com/media/catalog/product/b/6/b6a51b2MINIM00000164_1180624.jpg",
+      "category": "beauty",
+      "description": "Broad-spectrum sunscreen that protects your skin from harmful UV rays without greasiness."
+    },
+    {
+      "id": "b108",
+      "title": "Sugar Matte Lipstick",
+      "price": 499,
+      "image": "https://tse4.mm.bing.net/th/id/OIP.8ho9SI0md2miSWGifvdPAwHaE8?pid=Api&P=0&h=180",
+      "category": "beauty",
+      "description": "Highly pigmented matte lipstick that delivers rich color with long-lasting comfort."
+    },
+    {
+      "id": "b109",
+      "title": "Biotique Face Scrub",
+      "price": 249,
+      "image": "https://tse1.mm.bing.net/th/id/OIP.JVe9O3RzJck656H5QtovPwHaD4?pid=Api&P=0&h=180",
+      "category": "beauty",
+      "description": "Exfoliating face scrub that removes dead skin cells and reveals glowing skin."
+    },
+    {
+      "id": "b110",
+      "title": "Vaseline Lip Therapy",
+      "price": 199,
+      "image": "https://m.media-amazon.com/images/I/71qHRLKQPJL._AC_.jpg",
+      "category": "beauty",
+      "description": "Intensive lip care that heals dry lips and locks in moisture for long-lasting softness."
+    }
+  ],
+  "cart": [
+    {
+      "id": "2ec3",
+      "userId": "57f6",
+      "productId": "2a41cc69-70d2-41a3-9b5a-587a72808ce2",
+      "title": "iPhone 14",
+      "price": 79999,
+      "image": "https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg",
+      "qty": 1
+    },
+    {
+      "id": "6138",
+      "userId": "57f6",
+      "productId": "e5fef8e2-5851-47ea-945d-33385f279017",
+      "title": "Samsung Galaxy S23",
+      "price": 74999,
+      "image": "https://m.media-amazon.com/images/I/61VfL-aiToL._SX679_.jpg",
+      "qty": 1
+    },
+    {
+      "id": "d37e",
+      "userId": "35c6",
+      "productId": "ea490720-0c5c-4cc7-b48d-46c703cf8555",
+      "title": "Women Kurti",
+      "price": 1299,
+      "image": "https://www.beautyepic.com/wp-content/uploads/2017/07/25-Slit-Kurti.jpg",
+      "qty": 1
+    },
+    {
+      "id": "0d29",
+      "userId": "ff25",
+      "productId": "e256",
+      "title": "iPhone 14",
+      "price": 79999,
+      "image": "https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg",
+      "qty": 1
+    }
+  ],
+  "orders": [
+    {
+      "id": "06b3",
+      "userId": "35c6",
+      "items": [
+        {
+          "id": "a7a5",
+          "userId": "35c6",
+          "productId": "aa9b",
+          "title": "Women Kurti",
+          "price": 1299,
+          "image": "https://www.beautyepic.com/wp-content/uploads/2017/07/25-Slit-Kurti.jpg",
+          "qty": 3
+        },
+        {
+          "id": "ee4a",
+          "userId": "35c6",
+          "productId": "468c",
+          "title": "Prestige Electric Kettle",
+          "price": 899,
+          "image": "https://d2xamzlzrdbdbn.cloudfront.net/products/b013434e-8924-414d-9649-991b5f85aa50.png",
+          "qty": 1
+        }
+      ],
+      "date": "1/26/2026, 10:22:01 AM",
+      "status": "Shipping"
+    }
+  ],
+  "offers": [
+    {
+      "id": "1",
+      "title": "🔥 Electronics Mega Sale – Up to 50% OFF",
+      "image": "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5"
+    },
+    {
+      "id": "2",
+      "title": "👕 Fashion Fiesta – Flat 40% OFF",
+      "image": "https://images.unsplash.com/photo-1521334884684-d80222895322"
+    },
+    {
+      "id": "3",
+      "title": "📚 Book Bonanza – Buy 1 Get 1",
+      "image": "https://images.unsplash.com/photo-1516979187457-637abb4f9353"
+    },
+    {
+      "id": "4",
+      "title": "🏠 Home Essentials – Minimum 30% OFF",
+      "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511"
+    },
+    {
+      "id": "5",
+      "title": "🎧 Gadgets & Accessories – Hot Deals",
+      "image": "https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=1200&q=80"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "47c8d47d-2fc5-48c5-9916-3af9444f2d1a",
+      "userId": "57f6",
+      "productId": "e256",
+      "title": "iPhone 14",
+      "price": 79999,
+      "image": "https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg"
+    },
+    {
+      "id": "53bcbaa8-6c1c-49d6-a84a-4385cfa0041e",
+      "userId": "57f6",
+      "productId": "7a7d",
+      "title": "Samsung Galaxy S23",
+      "price": 74999,
+      "image": "https://m.media-amazon.com/images/I/61VfL-aiToL._SX679_.jpg"
+    },
+    {
+      "id": "038f2f17-fb94-4220-96f7-4a5f802ad00d",
+      "userId": "35c6",
+      "productId": "aa9b",
+      "title": "Women Kurti",
+      "price": 1299,
+      "image": "https://www.beautyepic.com/wp-content/uploads/2017/07/25-Slit-Kurti.jpg"
+    },
+    {
+      "id": "eb7b2e3c-8394-42cc-93aa-85cb0aadc8fb",
+      "userId": "35c6",
+      "productId": "468c",
+      "title": "Prestige Electric Kettle",
+      "price": 899,
+      "image": "https://d2xamzlzrdbdbn.cloudfront.net/products/b013434e-8924-414d-9649-991b5f85aa50.png"
+    },
+    {
+      "id": "96abf48e-807c-41a3-867e-017adb0a4758",
+      "userId": "35c6",
+      "productId": "e256",
+      "title": "iPhone 14",
+      "price": 79999,
+      "image": "https://m.media-amazon.com/images/I/61bK6PMOC3L._SX679_.jpg"
+    },
+    {
+      "id": "3b0d6ecd-ac91-4044-b4dc-f3abfef362dd",
+      "userId": "ff25",
+      "productId": "1e4b",
+      "title": "Refrigerator",
+      "price": 30000,
+      "image": "https://media3.bsh-group.com/Images/400x/MCMI02371670_Siemens_Global_Stages_01_4_4.jpg"
+    },
+    {
+      "id": "e226a3db-c54b-4353-a7bc-fae095ece9c9",
+      "userId": "ff25",
+      "productId": "d5c2",
+      "title": "Philips Mixer Grinder",
+      "price": 3299,
+      "image": "https://ii1.pepperfry.com/media/catalog/product/p/h/1100x1210/philips-viva-collection-hl7701-00-750-watt-mixer-grinder-with-4-jars-philips-viva-collection-hl7701--uxovm8.jpg"
+    },
+    {
+      "id": "93bef5eb-6652-4822-84a2-cf989157c385",
+      "userId": "ff25",
+      "productId": "468c",
+      "title": "Prestige Electric Kettle",
+      "price": 899,
+      "image": "https://d2xamzlzrdbdbn.cloudfront.net/products/b013434e-8924-414d-9649-991b5f85aa50.png"
+    }
+  ]
+}

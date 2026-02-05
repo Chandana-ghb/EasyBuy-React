@@ -1,0 +1,177 @@
+/* DEFAULT */
+.menu-toggle {
+  display: none;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  header {
+    padding: 0 14px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
+  }
+
+  .navbar-right {
+    display: none;
+  }
+}
+
+/* VERY SMALL SCREENS */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 18px !important;
+  }
+}
+
+
+/* BASE (Mobile First) */
+.navbar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+}
+
+.navbar-logo {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.navbar-user {
+  font-size: 13px;
+}
+
+.navbar-logout {
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+/* SMALL TABLETS */
+@media (min-width: 600px) {
+  .navbar-logo {
+    font-size: 20px;
+  }
+
+  .navbar-user,
+  .navbar-logout {
+    font-size: 14px;
+  }
+}
+
+/* TABLETS / SMALL LAPTOPS */
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0 22px;
+  }
+
+  .navbar-logo {
+    font-size: 22px;
+  }
+
+  .navbar-user,
+  .navbar-logout {
+    font-size: 15px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+  .navbar-logo {
+    font-size: 26px;
+  }
+
+  .navbar-user {
+    font-size: 16px;
+  }
+
+  .navbar-logout {
+    font-size: 15px;
+    padding: 7px 14px;
+  }
+}
+
+/* LARGE SCREENS */
+@media (min-width: 1440px) {
+  .navbar-logo {
+    font-size: 30px;
+  }
+
+  .navbar-user {
+    font-size: 17px;
+  }
+
+  .navbar-logout {
+    font-size: 16px;
+    padding: 8px 18px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  header {
+    padding: 0 10px !important;
+    height: 56px !important;
+  }
+
+  .menu-toggle {
+    font-size: 22px !important;
+  }
+
+  h2 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin-left: 40px;
+  }
+
+  /* User section */
+  header div span {
+    font-size: 11px !important;
+  }
+
+  header div button {
+    font-size: 11px !important;
+    padding: 4px 8px !important;
+    border-radius: 6px !important;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 376px) {
+  header {
+    padding: 0 12px !important;
+    height: 60px !important;
+  }
+
+  .menu-toggle {
+    font-size: 24px !important;
+  }
+
+  h2 {
+    font-size: 17px !important;
+    font-weight: 800 !important;
+    margin-left: 40px !important;
+  }
+
+  /* User section */
+  header div span {
+    font-size: 13px !important;
+  }
+
+  header div button {
+    font-size: 12px !important;
+    padding: 5px 10px !important;
+    border-radius: 7px !important;
+  }
+
+  /* user {
+    color: #ecfeff;
+    font-size: "10px" !important;
+    font-weight: "500";
+  } */
+}
