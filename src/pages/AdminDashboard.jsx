@@ -38,17 +38,17 @@ function AdminDashboard() {
 
   /* ================= FETCH ================= */
   const fetchProducts = async () => {
-    const res = await fetch("http://localhost:5000/products");
+    const res = await fetch("https://easybuy-react.onrender.com/products");
     setProducts(await res.json());
   };
 
   const fetchOrders = async () => {
-    const res = await fetch("http://localhost:5000/orders");
+    const res = await fetch("https://easybuy-react.onrender.com/orders");
     setOrders(await res.json());
   };
 
   const fetchOffers = async () => {
-    const res = await fetch("http://localhost:5000/offers");
+    const res = await fetch("https://easybuy-react.onrender.com/offers");
     setOffers(await res.json());
   };
 
@@ -59,7 +59,7 @@ function AdminDashboard() {
 
     if (editingProductId) {
       // EDIT MODE
-      await fetch(`http://localhost:5000/products/${editingProductId}`, {
+      await fetch(`https://easybuy-react.onrender.com/products/${editingProductId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, price: Number(form.price) }),
@@ -67,7 +67,7 @@ function AdminDashboard() {
       setEditingProductId(null);
     } else {
       // ADD MODE
-      await fetch("http://localhost:5000/products", {
+      await fetch("https://easybuy-react.onrender.com/products", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, price: Number(form.price) }),
@@ -79,7 +79,7 @@ function AdminDashboard() {
   };
 
   const deleteProduct = async (id) => {
-    await fetch(`http://localhost:5000/products/${id}`, { method: "DELETE" });
+    await fetch(`https://easybuy-react.onrender.com/products/${id}`, { method: "DELETE" });
     fetchProducts();
   };
 
@@ -97,14 +97,14 @@ function AdminDashboard() {
       return alert("Fill all offer fields");
 
     if (editingOfferId) {
-      await fetch(`http://localhost:5000/offers/${editingOfferId}`, {
+      await fetch(`https://easybuy-react.onrender.com/offers/${editingOfferId}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(offerForm),
       });
       setEditingOfferId(null);
     } else {
-      await fetch("http://localhost:5000/offers", {
+      await fetch("https://easybuy-react.onrender.com/offers", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(offerForm),
@@ -121,13 +121,13 @@ function AdminDashboard() {
   };
 
   const deleteOffer = async (id) => {
-    await fetch(`http://localhost:5000/offers/${id}`, { method: "DELETE" });
+    await fetch(`https://easybuy-react.onrender.com/offers/${id}`, { method: "DELETE" });
     fetchOffers();
   };
 
   /* ================= ORDERS ================= */
   const updateOrderStatus = async (id, status) => {
-    await fetch(`http://localhost:5000/orders/${id}`, {
+    await fetch(`https://easybuy-react.onrender.com/orders/${id}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ status }),
