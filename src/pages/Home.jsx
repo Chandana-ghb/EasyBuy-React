@@ -24,7 +24,7 @@ const Home = () => {
   /* ================= FETCH USER ORDERS ================= */
   useEffect(() => {
     if (user?.id) {
-      fetch(`http://localhost:5000/orders?userId=${user.id}`)
+      fetch(`https://easybuy-react.onrender.com/orders?userId=${user.id}`)
         .then((res) => res.json())
         .then((data) => setOrders(data));
     }
@@ -32,14 +32,14 @@ const Home = () => {
 
   /* ================= FETCH OFFERS ================= */
   useEffect(() => {
-    fetch("http://localhost:5000/offers")
+    fetch("https://easybuy-react.onrender.com/offers")
       .then((res) => res.json())
       .then((data) => setOffers(data));
   }, []);
 
   /* ================= FETCH PRODUCTS ================= */
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://easybuy-react.onrender.com/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
