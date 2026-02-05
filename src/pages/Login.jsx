@@ -17,7 +17,7 @@ function Login() {
   const onSubmit = async (data) => {
     try {
       const res = await fetch(
-        `http://localhost:5000/users?email=${data.email}`
+        `https://easybuy-react.onrender.com/users?email=${data.email}`
       );
       const user = await res.json();
 
