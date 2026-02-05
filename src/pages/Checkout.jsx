@@ -29,7 +29,6 @@ function Checkout() {
 
     clearCart();
     alert("Order placed successfully");
-    navigate("/");
   };
 
 
